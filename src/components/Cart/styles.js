@@ -1,0 +1,42 @@
+import { makeStyles } from '@material-ui/core/styles';
+
+export default makeStyles((theme) => ({
+    toolbar: theme.mixins.toolbar,
+    title: {
+        marginTop: '5%',
+    },
+    emptyButton: {
+        minWidth: '150px',
+        [theme.breakpoints.down('xs')]: {
+            marginBottom: '5px',
+        },
+        [theme.breakpoints.up('xs')]: {
+            marginBottom: '20px',
+        },
+    },
+    checkButton: {
+        minWidth: '150px',
+        [theme.breakpoints.down('xs')]: {
+            marginBottom: '5px',
+        },
+        [theme.breakpoints.up('xs')]: {
+            marginBottom: '20px',
+        },
+    },
+    link: {
+        textDecoration: 'none',
+    },
+    cardDetails: {
+        display: 'flex',
+        marginTop: '10%',
+        width: '50%',
+        justifyContent: 'space-between',
+        '& div': {
+            display: "flex",
+            justifyContent: 'space-between',
+            gap: theme.spacing(2),
+            // width: '100%',
+            // alignItems: "flex-end"
+        }
+    },
+}));
